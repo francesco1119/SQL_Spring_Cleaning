@@ -39,10 +39,10 @@ SET @body = @body + @xml +'</table></body></html>'
 
 
 EXEC msdb.dbo.sp_send_dbmail
-@profile_name = 'FrancescoEmailProfile', -- replace with your SQL Database Mail Profile 
+@profile_name = 'MyEmailProfile', -- replace with your SQL Database Mail Profile 
 @body = @body,
 @body_format ='HTML',
-@recipients = 'francesco84mantovani@gmail.com', -- replace with your email address
+@recipients = 'myemail@domain.net', -- replace with your email address
 @subject = 'Database Rank by DB size Descending' ;
 
 
