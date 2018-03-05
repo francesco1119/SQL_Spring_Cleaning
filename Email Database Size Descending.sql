@@ -47,5 +47,3 @@ EXEC msdb.dbo.sp_send_dbmail
 
 
 DROP TABLE #DB_Size_Descending
-
---select Product_strCode,  Product_strVersion,  Product_strBuild  from VISTAMikeL.dbo.tblProduct
