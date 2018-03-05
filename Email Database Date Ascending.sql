@@ -1,5 +1,7 @@
 
 
+
+
 CREATE TABLE #Creation_Date_Ascending (
 	[Name] [nvarchar](128), 
 	[db_size] [nvarchar](50),
@@ -29,7 +31,9 @@ SET @xml = CAST((	SELECT
 					FOR XML PATH('tr'), ELEMENTS ) AS NVARCHAR(MAX))
 
 
-SET @body ='<html><body><H3>Database Rank by Creation Date Ascending</H3>
+SET @body ='<html><body><H2>Database Rank by Creation Date Ascending</H2>
+			<H3>This e-mail lists all databases on the server by creation date ascending</H3>
+			<H3>Please delete all databases that are no longer in use</H3>
 			<table border = 1> 
 			<tr>
 			<th>Name</th> <th>db_size</th> <th>owner</th> <th>db_id</th> <th>Creation_Date_Ascending</th> <th>status</th> <th>compatibility_level</th></tr>'    
@@ -39,11 +43,11 @@ SET @body = @body + @xml +'</table></body></html>'
 
 
 EXEC msdb.dbo.sp_send_dbmail
-@profile_name = 'MyEmailProfile', -- replace with your SQL Database Mail Profile 
+@profile_name = 'MonthlySQlSpringClean', -- replace with your SQL Database Mail Profile 
 @body = @body,
 @body_format ='HTML',
-@recipients = 'myemail@domain.net', -- replace with your email address
-@subject = 'Database Rank by DB size Descending' ;
+@recipients = 'YourEmail', -- replace with your email address
+@subject = 'Database Rank by DB Date Ascending' ;
 
 
 DROP TABLE #Creation_Date_Ascending
