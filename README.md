@@ -6,8 +6,15 @@ Identify unused databases and clean space on your SQL Server
 How to Install
 ======
 
-1) First of all we need to create a SQL Server E-mail Profile and Account; you can follow any of these guides:
-    * ![Guide One](https://www.mssqltips.com/sqlservertip/1100/setting-up-database-mail-for-sql-server/)
-    * ![Guide Two (with a few e-mail examples)](https://www.mssqltips.com/sqlservertip/2578/setup-sql-server-database-mail-to-use-a-gmail-hotmail-yahoo-or-aol-account/)
-    * ![Guide Three (E-mail setup + Job setup)](https://solutioncenter.apexsql.com/how-to-set-up-email-notifications-for-backup-jobs-in-sql-server/)
+1) First of all we need to create a SQL Server **E-mail Profile** and **Account**; you can follow ![This guide](https://www.mssqltips.com/sqlservertip/1100/setting-up-database-mail-for-sql-server/)
+
+2) You now need to create 2 jobs following ![this guide](https://solutioncenter.apexsql.com/how-to-set-up-email-notifications-for-backup-jobs-in-sql-server/), you can call them as you wish; I usually call them **Email_Date_Ascending** and **Email_Size_Descending**. On each job setup the relative query you find here in attach. 
+
+3) Schedule the job to run monthly or at any date you prefer. 
+
+Done!
+
+The e-mail you will receive will look like this:
+
+
     
