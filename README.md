@@ -16,5 +16,13 @@ Done!
 
 The e-mail you will receive will look like this:
 
+#### Email_Date_Ascending
+
+![alt text](https://github.com/francesco1119/SQL_Spring_Cleaning/blob/master/images/Creation_Date_Ascending.png)
+
+#### Email_Size_Descending
+
+![alt text](https://github.com/francesco1119/SQL_Spring_Cleaning/blob/master/images/DB_Size_Descending.png)
+
 
     
