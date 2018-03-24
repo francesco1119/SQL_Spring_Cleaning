@@ -38,7 +38,7 @@ SET @body ='<html><body><H2>Database Rank by Creation Date Ascending</H2>
 SET @body = @body + @xml +'</table></body></html>'
 
 DECLARE @SubjectVariable VARCHAR(250)
-set @SubjectVariable = 'Database Rank by DB Date Ascending: ' + @@SERVERNAME + ''
+set @SubjectVariable = 'Database Rank by DB Date Ascending for Server: ' + @@SERVERNAME + ''
 
 EXEC msdb.dbo.sp_send_dbmail
 @profile_name = 'SQL_Spring_Cleaning_Profile', -- replace with your SQL Database Mail Profile 
