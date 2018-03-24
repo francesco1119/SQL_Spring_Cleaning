@@ -1,7 +1,3 @@
-
-
-
-
 CREATE TABLE #Creation_Date_Ascending (
 	[Name] [nvarchar](128), 
 	[db_size] [nvarchar](50),
@@ -41,13 +37,14 @@ SET @body ='<html><body><H2>Database Rank by Creation Date Ascending</H2>
  
 SET @body = @body + @xml +'</table></body></html>'
 
+DECLARE @SubjectVariable VARCHAR(250)
+set @SubjectVariable = 'Database Rank by DB Date Ascending: ' + @@SERVERNAME + ''
 
 EXEC msdb.dbo.sp_send_dbmail
-@profile_name = 'MonthlySQlSpringClean', -- replace with your SQL Database Mail Profile 
+@profile_name = 'SQL_Spring_Cleaning_Profile', -- replace with your SQL Database Mail Profile 
 @body = @body,
 @body_format ='HTML',
-@recipients = 'YourEmail', -- replace with your email address
-@subject = 'Database Rank by DB Date Ascending' ;
-
+@recipients = 'MyEmail', -- replace with your email address
+@subject = @SubjectVariable
 
 DROP TABLE #Creation_Date_Ascending
