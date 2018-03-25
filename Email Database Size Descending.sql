@@ -78,7 +78,7 @@ EXEC msdb.dbo.sp_send_dbmail
 @profile_name = ''SQL_Spring_Cleaning_Profile'', -- replace with your SQL Database Mail Profile 
 @body = @body,
 @body_format =''HTML'',
-@recipients = ''francesco84mantovani@gmail.com'', -- replace with your email address
+@recipients = ''Your_Recipient_Email'', -- replace with your email address
 @subject =  @SubjectVariable;
 
 
