@@ -17,6 +17,7 @@ How to Install
 2) Download the two queries:
     * **Email Database Date Ascending.sql**
     * **Email Database Size Descending.sql**
+   
    and for each of them edit the line:
    ```
    @recipients = 'YourEmail', -- replace with your email address
@@ -29,7 +30,7 @@ The e-mail you will receive will look like this:
 
 #### Email_Date_Ascending
 
-![alt text](https://github.com/francesco1119/SQL_Spring_Cleaning/blob/master/images/Creation_Date_Ascending.png)
+![alt text](https://github.com/francesco1119/SQL_Spring_Cleaning/blob/master/images/DB_Date_Ascending.png)
 
 #### Email_Size_Descending
 
