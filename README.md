@@ -6,7 +6,7 @@ Identify unused databases and clean space on your SQL Server
 How to Install
 ======
 
-1) Download the query **Create_SQL_Spring_Cleaning_Account_And_Profile.sql** and edit the first 4 rows:
+1) Download the query **Create_Account_And_Profile.sql** and edit the first 4 rows:
    ```
    DECLARE @YourEmail NVARCHAR(50) SET @YourEmail = 'Your_Email' --Put here your E-mail
    DECLARE @YourPassword NVARCHAR(50) SET @YourPassword = 'Your_Password' --Put here your E-mail
@@ -36,5 +36,8 @@ The e-mail you will receive will look like this:
 
 ![alt text](https://github.com/francesco1119/SQL_Spring_Cleaning/blob/master/images/DB_Size_Descending.png)
 
+How to Clean in case you made Bubu
+======
 
+Download the query **I_Made_Bubu.sql** and run it
     
