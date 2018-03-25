@@ -1,7 +1,7 @@
-DECLARE @YourEmail NVARCHAR(50) SET @YourEmail = 'info@jeeja.biz' --Put here your E-mail
-DECLARE @YourPassword NVARCHAR(50) SET @YourPassword = 'Ttteeerrr$$$' --Put here your E-mail
-DECLARE @YourSMTPSserver NVARCHAR(50) SET @YourSMTPSserver = 'mtl-node5.websitehostserver.net' --Put here your SMTP Server
-DECLARE @YourPort int SET @YourPort = '25' --Put here your SMTP port
+DECLARE @YourEmail NVARCHAR(50) SET @YourEmail = 'Your_Email' --Put here your E-mail
+DECLARE @YourPassword NVARCHAR(50) SET @YourPassword = 'Your_Password' --Put here your E-mail
+DECLARE @YourSMTPSserver NVARCHAR(50) SET @YourSMTPSserver = 'Your_SMTP_Server' --Put here your SMTP Server
+DECLARE @YourPort int SET @YourPort = 'Your_Port_Number' --Put here your SMTP port
 
 -- Create a Database Mail account  
 EXECUTE msdb.dbo.sysmail_add_account_sp  
