@@ -39,5 +39,7 @@ The e-mail you will receive will look like this:
 How to Clean in case you made Bubu
 ======
 
-Download the query **I_Made_Bubu.sql** and run it
+Download the query **I_Made_Bubu.sql** and run it. 
+
+This query delete your E-mail Account and Profile and both stored procedure
     
