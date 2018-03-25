@@ -18,7 +18,9 @@ How to Install
     * **Email Database Date Ascending.sql**
     * **Email Database Size Descending.sql**
    and for each of them edit the line:
-   `@recipients = 'YourEmail', -- replace with your email address`
+   ```
+   @recipients = 'YourEmail', -- replace with your email address
+   ```
    entering your recipient e-mail address
 
 Done!
