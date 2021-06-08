@@ -1,4 +1,4 @@
-ent_USE [msdb]
+USE [msdb]
 GO
 BEGIN TRANSACTION
 DECLARE @ReturnCode INT
