@@ -1,5 +1,5 @@
 DECLARE @YourEmail NVARCHAR(50) SET @YourEmail = 'my-email@address.com' --Put here your E-mail
-DECLARE @YourPassword NVARCHAR(50) SET @YourPassword = 'MyPassword' --Put here your E-mail
+DECLARE @YourPassword NVARCHAR(50) SET @YourPassword = 'MyPassword' --Put here your Password
 DECLARE @YourSMTPSserver NVARCHAR(50) SET @YourSMTPSserver = 'SMTP.account.com' --Put here your SMTP Server
 DECLARE @YourPort int SET @YourPort = 'port here' --Put here your SMTP port
 
