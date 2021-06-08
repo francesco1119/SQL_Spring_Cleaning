@@ -1,7 +1,7 @@
-DECLARE @YourEmail NVARCHAR(50) SET @YourEmail = 'francesco.mantovani@sword-group.com' --Put here your E-mail
-DECLARE @YourPassword NVARCHAR(50) SET @YourPassword = 'Hard1+2"' --Put here your E-mail
-DECLARE @YourSMTPSserver NVARCHAR(50) SET @YourSMTPSserver = 'outlook.office365.com' --Put here your SMTP Server
-DECLARE @YourPort int SET @YourPort = '587' --Put here your SMTP port
+DECLARE @YourEmail NVARCHAR(50) SET @YourEmail = 'my-email@address.com' --Put here your E-mail
+DECLARE @YourPassword NVARCHAR(50) SET @YourPassword = 'MyPassword' --Put here your E-mail
+DECLARE @YourSMTPSserver NVARCHAR(50) SET @YourSMTPSserver = 'SMTP.account.com' --Put here your SMTP Server
+DECLARE @YourPort int SET @YourPort = 'port here' --Put here your SMTP port
 
 -- Create a Database Mail account  
 EXECUTE msdb.dbo.sysmail_add_account_sp  
