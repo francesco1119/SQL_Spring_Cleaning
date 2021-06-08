@@ -1,7 +1,7 @@
-DECLARE @YourEmail NVARCHAR(50) SET @YourEmail = 'Your_Email' --Put here your E-mail
-DECLARE @YourPassword NVARCHAR(50) SET @YourPassword = 'Your_Password' --Put here your E-mail
-DECLARE @YourSMTPSserver NVARCHAR(50) SET @YourSMTPSserver = 'Your_SMTP_Server' --Put here your SMTP Server
-DECLARE @YourPort int SET @YourPort = 'Your_Port_Number' --Put here your SMTP port
+DECLARE @YourEmail NVARCHAR(50) SET @YourEmail = 'francesco.mantovani@sword-group.com' --Put here your E-mail
+DECLARE @YourPassword NVARCHAR(50) SET @YourPassword = 'Hard1+2"' --Put here your E-mail
+DECLARE @YourSMTPSserver NVARCHAR(50) SET @YourSMTPSserver = 'outlook.office365.com' --Put here your SMTP Server
+DECLARE @YourPort int SET @YourPort = '587' --Put here your SMTP port
 
 -- Create a Database Mail account  
 EXECUTE msdb.dbo.sysmail_add_account_sp  
@@ -35,3 +35,25 @@ EXECUTE msdb.dbo.sysmail_add_principalprofile_sp
     @is_default = 0; 
 
 EXEC msdb.dbo.sysmail_help_account_sp;
+
+-- show advanced options
+EXEC sp_configure 'show advanced options', 1
+GO
+RECONFIGURE
+GO
+ 
+-- enable Database Mail XPs
+EXEC sp_configure 'Database Mail XPs', 1
+GO
+RECONFIGURE
+GO
+ 
+-- check if it has been changed
+EXEC sp_configure 'Database Mail XPs'
+GO
+ 
+-- hide advanced options
+EXEC sp_configure 'show advanced options', 0
+GO
+RECONFIGURE
+GO
