@@ -34,5 +34,5 @@ How to Clean in case you made bubu
 
 Download the query **Delete SQL_Spring_Claeaning.sql** and run it. 
 
-This query delete your E-mail Account and Profile and both stored procedure
+This query delete your E-mail Account and Profile and both agent jobs
     
