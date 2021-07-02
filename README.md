@@ -21,7 +21,7 @@ How to Install
    ```
    entering your recipient e-mail address
 
-Done!
+Done! You can now press F5.
 
 The e-mail you will receive will look like this:
 
