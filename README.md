@@ -6,19 +6,16 @@ Identify unused databases and clean space on your SQL Server
 How to Install
 ======
 
-1) Download the query **Create_Account_And_Profile.sql** and edit the first 4 rows:
+1) Download the query **Create SQL_Spring_Cleaning.sql** and edit the first 4 rows:
    ```
    DECLARE @YourEmail NVARCHAR(50) SET @YourEmail = 'Your_Email' --Put here your E-mail
    DECLARE @YourPassword NVARCHAR(50) SET @YourPassword = 'Your_Password' --Put here your E-mail
    DECLARE @YourSMTPSserver NVARCHAR(50) SET @YourSMTPSserver = 'Your_SMTP_Server' --Put here your SMTP Server
    DECLARE @YourPort int SET @YourPort = 'Your_Port_Number' --Put here your SMTP port
    ```
+   Keep in mind that if you are using Outlook, Gmail or any other 2FA e-mail SQL Server will not be able to send e-mails for you.
 
-2) Download the two queries:
-    * **Email Database Date Ascending.sql**
-    * **Email Database Size Descending.sql**
-   
-   and for each of them edit the line:
+2) Now edit the line:
    ```
    @recipients = 'YourEmail', -- replace with your email address
    ```
@@ -36,10 +33,10 @@ The e-mail you will receive will look like this:
 
 ![alt text](https://github.com/francesco1119/SQL_Spring_Cleaning/blob/master/images/DB_Size_Descending.png)
 
-How to Clean in case you made Bubu
+How to Clean in case you made bubu
 ======
 
-Download the query **I_Made_Bubu.sql** and run it. 
+Download the query **Delete SQL_Spring_Claeaning.sql** and run it. 
 
 This query delete your E-mail Account and Profile and both stored procedure
     
