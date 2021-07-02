@@ -25,13 +25,9 @@ Done!
 
 The e-mail you will receive will look like this:
 
-#### Email_Date_Ascending
+#### Example:
 
-![alt text](https://github.com/francesco1119/SQL_Spring_Cleaning/blob/master/images/DB_Date_Ascending.png)
-
-#### Email_Size_Descending
-
-![alt text](https://github.com/francesco1119/SQL_Spring_Cleaning/blob/master/images/DB_Size_Descending.png)
+![alt text](https://github.com/francesco1119/SQL_Spring_Cleaning/blob/master/images/newsletter_SQL_Spring_Cleaning.png)
 
 How to Clean in case you made bubu
 ======
