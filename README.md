@@ -1,7 +1,8 @@
 # SQL Spring Cleaning
 Identify unused databases and clean space on your SQL Server
-
-![alt text](https://www.computerhope.com/cdn/colossus.jpg)
+<p align="center">
+  <img width="460" src="https://www.computerhope.com/cdn/colossus.jpg">
+</p>
 
 How to Install
 ======
