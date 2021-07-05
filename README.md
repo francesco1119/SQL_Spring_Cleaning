@@ -8,7 +8,7 @@ How to Install
 ======
 
 1) Download the query **Create SQL_Spring_Cleaning.sql** and edit the first 4 rows:
-   ```
+   ```SQL
    DECLARE @YourEmail NVARCHAR(50) SET @YourEmail = 'Your_Email' --Put here your E-mail
    DECLARE @YourPassword NVARCHAR(50) SET @YourPassword = 'Your_Password' --Put here your E-mail
    DECLARE @YourSMTPSserver NVARCHAR(50) SET @YourSMTPSserver = 'Your_SMTP_Server' --Put here your SMTP Server
@@ -17,7 +17,7 @@ How to Install
    Keep in mind that if you are using Outlook, Gmail or any other 2FA e-mail SQL Server will not be able to send e-mails for you.
 
 2) Now edit the line:
-   ```
+   ```SQL
    @recipients = 'YourEmail', -- replace with your email address
    ```
    entering your recipient e-mail address
